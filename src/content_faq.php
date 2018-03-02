@@ -121,7 +121,7 @@ class content_faq extends base_content {
   * @access public
   * @return string
   */
-  function getParsedTeaser() {
+  function getParsedTeaser($parseParams = NULL) {
     $this->setDefaultData();
     if (!empty($this->data['teaser']) != '') {
       $result = sprintf(
